@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev:server": "ts-node-dev src/server.ts",
-    "db:migrate": "knex migrate:latest --knexfile knexfile.ts"
+    "dev:server": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
+    "db:migrate": "knex migrate:latest --knexfile knexfile.ts",
+    "db:seed": "knex seed:run --knexfile knexfile.ts"
   },
   "dependencies": {
     "express": "^4.17.1",

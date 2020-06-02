@@ -1,9 +1,16 @@
+/* eslint-disable camelcase */
 import express from 'express';
+
+import PointsController from './controllers/PointsController';
+import ItemsController from './controllers/ItemsController';
 
 const routes = express.Router();
 
-routes.get('/', (request, response) => {
-  return response.json({ message: 'Hello Next Level Week' });
-});
+const pointsController = new PointsController();
+const itemsController = new ItemsController();
+
+routes.get('/items', itemsController.index);
+
+routes.post('/points', pointsController.create);
 
 export default routes;
