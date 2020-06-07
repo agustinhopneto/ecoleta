@@ -156,6 +156,10 @@ export const LeaftletContainer = styled.div`
   height: 350px;
   border-radius: 8px;
   margin-bottom: 24px;
+
+  > div {
+    height: 350px !important;
+  }
 `;
 
 export const ItemsGrid = styled.ul`
