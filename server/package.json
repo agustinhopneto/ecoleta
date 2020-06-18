@@ -6,12 +6,16 @@
   "scripts": {
     "dev:server": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
     "db:migrate": "knex migrate:latest --knexfile knexfile.ts",
-    "db:seed": "knex seed:run --knexfile knexfile.ts"
+    "db:seed": "knex seed:run --knexfile knexfile.ts",
+    "db:rollback": "knex migrate:rollback --knexfile knexfile.ts"
   },
   "dependencies": {
+    "@types/multer": "^1.4.3",
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "knex": "^0.21.1",
+    "multer": "^1.4.2",
     "sqlite3": "^4.2.0"
   },
   "devDependencies": {

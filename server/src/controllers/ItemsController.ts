@@ -1,6 +1,8 @@
 import { Request, Response } from 'express';
 import knex from '../database/connection';
 
+import '../lib/env';
+
 class ItemsController {
   async index(request: Request, response: Response): Promise<Response> {
     const items = await knex('items').select('*');
@@ -9,7 +11,7 @@ class ItemsController {
       return {
         id: item.id,
         name: item.title,
-        image_url: `http://172.16.0.81:3333/uploads/${item.image}`,
+        image_url: `${process.env.API_URL}:${process.env.API_PORT}/uploads/${item.image}`,
       };
     });
 

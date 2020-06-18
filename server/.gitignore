@@ -3,5 +3,7 @@ node_modules/
 build/
 yarn-error.log
 
-tmp/*
-!tmp/.gitkeep
+uploads/*.jpg
+uploads/*.png
+uploads/*.gif
+
