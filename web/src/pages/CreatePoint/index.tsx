@@ -25,6 +25,8 @@ import {
 
 import logo from '../../assets/logo.svg';
 
+import Dropzone from '../../components/Dropzone';
+
 interface ItemProps {
   id: number;
   name: string;
@@ -179,6 +181,8 @@ const CreatePoint: React.FC = () => {
         <h1>
           Cadastro do <br /> ponto de coleta
         </h1>
+
+        <Dropzone />
 
         <fieldset>
           <legend>
