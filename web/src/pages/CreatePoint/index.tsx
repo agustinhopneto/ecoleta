@@ -80,7 +80,7 @@ const CreatePoint: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    api
+    axios
       .get<IBGEUfResponse[]>(
         'https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome',
       )
