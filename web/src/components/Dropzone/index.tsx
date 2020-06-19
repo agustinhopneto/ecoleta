@@ -1,17 +1,17 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-console */
 
-/**
- * Vídeo 05 - 00:33:00
- * Dropzone feito
- */
 import React, { useState } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { FiUpload } from 'react-icons/fi';
 
 import { DropzoneContainer } from './styles';
 
-const Dropzone: React.FC = () => {
+interface DropzoneProps {
+  onFileUploaded: (file: File) => void;
+}
+
+const Dropzone: React.FC<DropzoneProps> = ({ onFileUploaded }) => {
   const [selectedFileUrl, setSelectedFileUrl] = useState('');
 
   function onDrop(acceptedFiles: File[]): void {
@@ -20,6 +20,7 @@ const Dropzone: React.FC = () => {
     const fileUrl = URL.createObjectURL(file);
 
     setSelectedFileUrl(fileUrl);
+    onFileUploaded(file);
   }
 
   const { getRootProps, getInputProps } = useDropzone({
