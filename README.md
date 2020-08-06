@@ -126,10 +126,6 @@ Para rodar o projeto é importante que tenha o [Node.js](nodejs.org) instalado n
   </div>
 </p>
 
-
-
-
-
 ## ✍️ Autor <a name = "authors"></a>
 
 - [@agustinhopneto](https://linkedin.com/in/agustinhopneto)
