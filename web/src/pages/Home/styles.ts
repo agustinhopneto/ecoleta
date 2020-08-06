@@ -13,6 +13,12 @@ export const Container = styled.div`
     background-position-y: 150px;
     background-position-x: center;
   }
+
+  @media (min-width: 900px) and (max-width: 1366px) {
+    background: url(${background}) no-repeat;
+    background-position-y: 150px;
+    background-position-x: 560px;
+  }
 `;
 
 export const Content = styled.div`

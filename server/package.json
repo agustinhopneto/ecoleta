@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev:server": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
-    "db:migrate": "knex migrate:latest --knexfile knexfile.ts",
-    "db:seed": "knex seed:run --knexfile knexfile.ts",
-    "db:rollback": "knex migrate:rollback --knexfile knexfile.ts"
+    "start": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
+    "migrate": "knex migrate:latest --knexfile knexfile.ts",
+    "seed": "knex seed:run --knexfile knexfile.ts",
+    "rollback": "knex migrate:rollback --knexfile knexfile.ts"
   },
   "dependencies": {
     "celebrate": "^12.1.1",
