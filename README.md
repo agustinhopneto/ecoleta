@@ -120,9 +120,9 @@ Para rodar o projeto é importante que tenha o [Node.js](nodejs.org) instalado n
 
 <p align="center">
   <div width=100% height=auto style="display:flex;flex-direction:row;justify-content:center">
-      <img width=100% height=auto src="./assets/M01.png" alt="Ecoleta">
-      <img width=100% height=auto src="./assets/M02.png" alt="Ecoleta">
-      <img width=100% height=auto src="./assets/M03.png" alt="Ecoleta">
+      <img width=32% height=auto src="./assets/M01.png" alt="Ecoleta">
+      <img width=32% height=auto src="./assets/M02.png" alt="Ecoleta">
+      <img width=32% height=auto src="./assets/M03.png" alt="Ecoleta">
   </div>
 </p>
 
